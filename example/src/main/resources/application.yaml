@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active: dev
+  thymeleaf:
+    cache: false
+  resources:
+    static-locations: file:src/main/resources/static/
+    cache-period: 0
+  devtools:
+    livereload:
+      enabled: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/management
+    username: postgres
+    password: postgres
+    driverClassName: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
